@@ -1,0 +1,37 @@
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+
+<div ng-controller="UsuarioController" ui-view>
+    <h2>Listagem Usuário</h2>
+    <a  ui-sref="usuario.novo" >Novo</a>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="usuario in usuarios">
+            <td>{{usuario.nome}}</td>
+            <td>
+              <a href="#" ui-sref="usuario.editar">Editar</a>
+              <button ng-click="deletarUsuario(usuario.id)">Excluir</button>
+          </td>
+        </tr>
+    </table>
+</div>

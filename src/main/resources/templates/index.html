@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilog</title>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+   
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.config.js"></script>
+    <script src="/app/app.service.js"></script>
+    <script src="/app/app.controller.js"></script>
+    <style>.active { color: red; font-weight: bold }</style>
+</head>
+<body ng-app="ilog">
+    <h1>Gerenciador de cursos</h1>
+    <a ui-sref="usuario" ui-sref-active="active">Usuário</a>
+    <a ui-sref="curso" ui-sref-active="active">Curso</a>
+    <ui-view></ui-view>
+  </body> 
+</html>

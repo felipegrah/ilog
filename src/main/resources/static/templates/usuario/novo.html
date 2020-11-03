@@ -1,0 +1,18 @@
+<div ng-controller="UsuarioController">
+    <h2>NOVO</h2>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" ng-model="usuario.nome"><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="text" id="telefone" name="telefone" ng-model="usuario.telefone"><br><br>
+        <label for="dataAdmissao">Data Adminissão:</label><br>
+        <input type="date" id="dataAdmissao" name="dataAdmissao" ng-model="usuario.dataAdmissao"><br><br>
+        <label for="login">Login:</label><br>
+        <input type="text" id="login" name="login" ng-model="usuario.login"><br><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" ng-model="usuario.senha"><br><br>
+        <input type="submit" value="Enviar" ng-click="enviarFormulario()">
+        <a  ui-sref="usuario" >Voltar</a>
+    </form>
+
+</div>
